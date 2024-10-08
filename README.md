@@ -15,13 +15,13 @@
 You can install the library via npm:
 
 ```bash
-npm install subha
+npm install subha-js
 Usage
 To use the library, require it in your JavaScript file:
 
 javascript
 Copy code
-const SubhaArray = require('subha');
+const SubhaArray = require('subha-js');
 
 const myArray = new SubhaArray();
 myArray.add(10);

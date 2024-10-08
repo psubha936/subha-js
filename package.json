@@ -1,6 +1,6 @@
 {
-  "name": "subha",
-  "version": "1.0.2",
+  "name": "subha-js",
+  "version": "1.0.1",
   "description": "",
   "main": "src/index.js",
   "directories": {
@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "jest",
-    "start": "node src/index.js"
+    "start":"node src/index.js"
   },
   "keywords": [],
   "author": "",
