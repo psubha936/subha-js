@@ -1,51 +1,71 @@
 # Subha JS
 
-A simple JavaScript library for managing arrays with additional functionality.
+**Subha JS** is a simple and efficient JavaScript library for managing arrays with additional functionality. It provides methods for basic array operations as well as statistical calculations.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Methods](#methods)
+- [Examples](#examples)
+- [License](#license)
 
 ## Installation
 
+You can install the library via npm:
+
 ```bash
-npm install subha-js
+npm install subha
 Usage
+To use the library, require it in your JavaScript file:
+
 javascript
 Copy code
-const SubhaArray = require('subha-js');
+const SubhaArray = require('subha');
 
 const myArray = new SubhaArray();
 myArray.add(10);
 myArray.add(20);
-console.log(myArray.average()); // 15
+console.log(myArray.average()); // Outputs: 15
 Methods
+The following methods are available in the SubhaArray class:
+
 add(item): Adds an item to the end of the array.
-removeLast(): Removes and returns the last item.
-removeFirst(): Removes and returns the first item.
-addFirst(item): Adds an item to the beginning.
-average(): Returns the average of the numbers.
-max(): Returns the maximum value.
-min(): Returns the minimum value.
-clear(): Clears the array.
-size(): Returns the size of the array.
+removeLast(): Removes and returns the last item of the array.
+removeFirst(): Removes and returns the first item of the array.
+addFirst(item): Adds an item to the beginning of the array.
+average(): Returns the average of the numbers in the array.
+max(): Returns the maximum value in the array.
+min(): Returns the minimum value in the array.
+clear(): Clears all items from the array.
+size(): Returns the number of items in the array.
 getArray(): Returns a copy of the current array.
-go
+Examples
+Here are some examples of how to use the methods:
+
+javascript
 Copy code
+const myArray = new SubhaArray();
 
-### Step 5: Add a `.gitignore` File
+// Adding items
+myArray.add(10);
+myArray.add(20);
+myArray.addFirst(5);
 
-Create a `.gitignore` file to ignore `node_modules` and other unnecessary files:
+console.log(myArray.getArray()); // Outputs: [5, 10, 20]
 
-node_modules/
+// Removing items
+myArray.removeLast(); // Removes 20
+console.log(myArray.getArray()); // Outputs: [5, 10]
 
-markdown
-Copy code
+myArray.removeFirst(); // Removes 5
+console.log(myArray.getArray()); // Outputs: [10]
 
-### Final Steps
+// Statistical calculations
+console.log(myArray.average()); // Outputs: 10
+console.log(myArray.max()); // Outputs: 10
+console.log(myArray.min()); // Outputs: 10
 
-1. **Run Tests**: Run your tests using:
-
-   ```bash
-   npm test
-Publish: Once everything is set, publish your library:
-
-bash
-Copy code
-npm publish
+// Clearing the array
+myArray.clear();
+console.log(myArray.size()); // Outputs: 0
